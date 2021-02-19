@@ -982,7 +982,7 @@ if (params.peakcaller && icount_check) {
 
         bedtools getfasta -fi $fasta -bed resized_peaks.bed -fo resized_peaks.fasta
 
-        dreme -norc -o ${name}_dreme -p resized_peaks.fasta
+        dreme -norc -t 600 -o ${name}_dreme -p resized_peaks.fasta
         """
 
     }
@@ -1122,7 +1122,7 @@ if (params.peakcaller && pureclip_check) {
 
         bedtools getfasta -fi $fasta -bed resized_peaks.bed -fo resized_peaks.fasta
 
-        dreme -norc -o ${name}_dreme -p resized_peaks.fasta
+        dreme -norc -t 600 -o ${name}_dreme -p resized_peaks.fasta
         """
 
     }
